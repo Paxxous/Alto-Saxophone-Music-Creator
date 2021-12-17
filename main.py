@@ -1,6 +1,6 @@
 from playsound import playsound
 import time, os
-playsound('audio/g.wav')
+
 
 
 print("Welcome to the paxxous music creator, type ?help for more information.\n\n")
