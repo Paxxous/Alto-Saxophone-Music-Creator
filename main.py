@@ -1,5 +1,7 @@
 from playsound import playsound
 import time, os
+playsound('audio/g.wav')
+
 
 print("Welcome to the paxxous music creator, type ?help for more information.\n\n")
 
@@ -25,7 +27,7 @@ if command == "?help":
   IMPORTANT:
 
   I only support the following notes:
-  g, a, b, c, D, E, F, G
+  g, a, b, c, D, E, F, F#, G
 
   (The high letters are high notes)
 
@@ -35,13 +37,39 @@ if command == "?help":
 elif command == "easter":
   print("Shut up you're not getting an easter egg lol idiot")
 
-elif command == "edt" or "edit":
-  print("What file would you like to edit?")
+elif command == "edt" or command == "edit":
+  print("What file would you like to edit? (Make sure to add the .mcr file extension)")
   ofile = input()
   files = os.listdir()
-  print(files)
+  
+  if ofile.startswith(tuple(files)):
+    efile = open(ofile, "w")
+    
+    notes = input("Type your notes to play, (type a comma after a note, or else it could break the program.) Also make sure that you type notes that actually exist.\n")
+    efile.write(notes)
+    notes = notes.replace(',', '')
+    lnotes = notes.split()
+    
 
-elif command == "crt" or "create":
+
+    print(lnotes)
+
+    os.chdir('audio')
+
+
+
+    for i in lnotes:
+      
+      print(i)
+      
+      playsound(i + '.wav')
+
+    
+
+    
+  
+
+elif command == "crt" or command == "create":
   nfile = open("Newfile.mcr", "a")
   print("Created file")
   
