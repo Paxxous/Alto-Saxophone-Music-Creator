@@ -35,14 +35,20 @@ if command == "?help":
 elif command == "easter":
   print("Shut up you're not getting an easter egg lol idiot")
 
+elif command == "edt" or "edit":
+  print("What file would you like to edit?")
+  ofile = input()
+  files = os.listdir()
+  print(files)
 
 elif command == "crt" or "create":
-  nfile = open("Newfile", "a")
+  nfile = open("Newfile.mcr", "a")
+  print("Created file")
   
 
 
 
-playsound(r"untitled.wav")
-time.sleep(1)
 
-print("My guy I just ended lmao")
+
+print("Ended program")
+time.sleep(1)
