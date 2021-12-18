@@ -6,7 +6,7 @@ import time, os
 print("Welcome to the paxxous music creator, type ?help for more information.\n\n")
 
 
-
+#create the main input that runs other functions
 command = input()
 
 if command == "?help":
@@ -27,20 +27,25 @@ if command == "?help":
   IMPORTANT:
 
   I only support the following notes:
-  g, a, b, c, D, E, F, F#, G
+  g, a, b, c, hd, he, hf, and hg
 
   (The high letters are high notes)
 
   look if you were looking to make a good song with this look elsewhere lol 
   """)
 
+
+#Easter egg thing
 elif command == "easter":
   print("Shut up you're not getting an easter egg lol idiot")
 
+
+#edit a file
 elif command == "edt" or command == "edit":
   print("What file would you like to edit? (Make sure to add the .mcr file extension)")
   ofile = input()
   files = os.listdir()
+  
   
   if ofile.startswith(tuple(files)):
     efile = open(ofile, "w")
@@ -68,15 +73,24 @@ elif command == "edt" or command == "edit":
 
     
   
-
+#Create a file
 elif command == "crt" or command == "create":
-  nfile = open("Newfile.mcr", "a")
+  name = input("What would you like to name the file?\n")
+  
+  nfile = open(name + 'mcr', "a")
   print("Created file")
   
 
 
+#Play a file
+elif command == "play" or command == "ply":
+  pfile = input("What file would you like to play?\n")
+
+  read = open(pfile, "r").read()
+  
 
 
 
+#End the program
 print("Ended program")
 time.sleep(1)
