@@ -2,9 +2,9 @@
 
 ## IMPORTANT
 
-This only supports a few notes, g, a, b, c, D, E, F, and G. Look man I'm not some sort of saxophone prodigy. I recorded all of the notes myself.
+This only supports a few notes, g, a, b, c, high d, high e, high f, and high g. Look man I'm not some sort of saxophone prodigy. I recorded all of the notes myself.
 
-Also, it's case sensitive, so g would be a low g, and G would be a high G. (You see what I did here?)
+
 
 ## Creation:
 
