@@ -16,7 +16,7 @@ I'm also learning git with this too. It's a pretty useful tool based on what I h
 
 Just updated to make the project public, I think that it's ready enough
 
-## installation
+## installation:
 
 Im working with c++ to make an installer that you just have to download and execute, but it's hard to make a get request with c++.
 
