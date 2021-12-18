@@ -15,3 +15,17 @@ I'm also learning git with this too. It's a pretty useful tool based on what I h
 
 
 Just updated to make the project public, I think that it's ready enough
+
+## installation
+
+Im working with c++ to make an installer that you just have to download and execute, but it's hard to make a get request with c++.
+
+I also haven't compiled the python file to an exe so if you want to run it then you would have to have python already installed. (Oh and also you need to have the playsound version 1.2.2 and os module installed so that it runs smoothly)
+
+
+
+Installation using git:
+
+```
+git clone https://github.com/Paxxous/Alto-Saxophone-Music-Creator.git
+```
